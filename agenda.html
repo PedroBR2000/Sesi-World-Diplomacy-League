@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay organized with our user-friendly Calendar featuring events, reminders, and a customizable interface. Built with HTML, CSS, and JavaScript. Start scheduling today!"
+    />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index2.css" />
+    <title>Sesi World Diplomacy League</title>
+  </head>
+  <body>
+
+    <header style="background-image: url('img/ONU-1111x740.png');">
+        <div class="container">
+            <nav>
+                <a href="Index2.html">
+
+                </a>
+                <ul class="ul">
+                    <a href="Index2.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="agenda.html">Agenda</a>
+                    <a href="contato.html">Contato</a>
+                    <a class="btn" href="inscrições.html">Faça Parte</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <img src="img/close.png" alt="">
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <img src="img/menu.png" alt="Menu">
+                </div>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Sesi World Diplomacy League</h1>
+                    <p>Simulações da ONU do Sesi-437 Hortolândia</p>
+                    <a href="Index2.html" class="btn animate-btn">Saiba mais</a>
+                </div>
+                <div class="LOGO">
+                    <img src="img/" alt="">
+                </div>
+            </section>
+        </div>
+    </header>
+
+    
+    <!-- Seção da Agenda -->
+    <section class="agenda-section">
+        <div class="container">
+            <div class="left">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">Dezembro 2022</div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Don</div>
+                        <div>Seg</div>
+                        <div>Ter</div>
+                        <div>Qua</div>
+                        <div>Qui</div>
+                        <div>Sex</div>
+                        <div>Sab</div>
+                    </div>
+                    <div class="days"></div>
+                    <div class="goto-today">
+                        <div class="goto">
+                            <input type="text" placeholder="mm/yyyy" class="date-input" />
+                            <button class="goto-btn">Ir</button>
+                        </div>
+                        <button class="today-btn">Hoje</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="today-date">
+                    <div class="event-day">Qua</div>
+                    <div class="event-date">12 de Dezembro 2022</div>
+                </div>
+                <div class="events"></div>
+                <div class="add-event-wrapper">
+                    <div class="add-event-header">
+                        <div class="title">Add Event</div>
+                        <i class="fas fa-times close"></i>
+                    </div>
+                    <div class="add-event-body">
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Event Name" class="event-name" />
+                        </div>
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Event Time From" class="event-time-from" />
+                        </div>
+                        <div class="add-event-input">
+                            <input type="text" placeholder="Event Time To" class="event-time-to" />
+                        </div>
+                    </div>
+                    <div class="add-event-footer">
+                        <button class="add-event-btn">Add Event</button>
+                    </div>
+                </div>
+            </div>
+            <button class="add-event">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+    </section>
+  
+      <footer>
+        <div class="container">
+            <ul>
+                <h3>SESI World Diplomacy League</h3>
+                <p>Simulado da ONU - SESI CE-437</p>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/world_ddiplomacyleague/"><img src="img/instagram.png" alt="instagram"></a>
+                </div>
+            </ul>
+            <ul>
+                <h3>Link</h3>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <ul>
+                <h3>Suporte</h3>
+                <li><a href="">Como Funciona</a></li>
+                <li><a href="">Característica</a></li>
+                <li><a href="">Comunicados</a></li>
+            </ul>
+            <ul>
+                <h3>Nos Contate</h3>
+                <li>
+                    <p>
+                        Telefone:
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Email:
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Brasil
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+        
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 Pedro Bonazzi. Todos os direitos reservados.</p>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+  <script>
+    // Exibir ou esconder o formulário dependendo do status de Dev
+    if (!isDev) {
+        document.querySelector(".add-event-wrapper").style.display = "none";
+    }
+  </script>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #dce9f931 ;
+}
+
+.section .form-container{
+    display: flex;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+form{
+    background: #fff;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2D5966;
+    font-size: 22pt;
+}
+
+form p{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single{
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+}
+
+form .input-single .input:focus{
+    border-bottom: 2px solid #2D5966;
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #2D5966;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2D5966;
+    color: #fff;
+    font-size: 14pt;
+    cursor: pointer;
+}
