@@ -433,4 +433,62 @@ footer .container a{
     }
 }
 
+/* Reduzir tamanho das fontes e margens em dispositivos móveis */
+@media (max-width: 768px) {
+    .banner .banner-text {
+        margin: 20px;
+        padding: 0;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 1.8em;
+    }
+
+    .banner .banner-text p {
+        font-size: 1em;
+    }
+
+    /* Empilhar seções horizontalmente */
+    .agenda .container,
+    .foto .container,
+    .curiosidades .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agenda .agenda-text,
+    .foto .foto-text,
+    .curiosidades .card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Ajustes no card de download */
+    .download-card {
+        margin: 20px auto;
+        padding: 15px;
+        width: 90%;
+    }
+
+    /* Ajustar tamanho do rodapé e redes sociais */
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Menu: ocultar itens de navegação e exibir o ícone */
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    /* Ajustar o texto no card de perguntas frequentes */
+    .textcenter .Perguntas {
+        font-size: 1.2em;
+    }
+}
+
 
