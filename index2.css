@@ -477,13 +477,8 @@ footer .container a{
     }
 
     /* Menu: ocultar itens de navegação e exibir o ícone */
-    nav ul {
-        display: none;
-    }
 
-    nav .menu-icon {
-        display: block;
-    }
+
 
     /* Ajustar o texto no card de perguntas frequentes */
     .textcenter .Perguntas {
@@ -492,3 +487,100 @@ footer .container a{
 }
 
 
+/* Ajustes gerais para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste do contêiner do calendário */
+    .agenda-section .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* Ajuste para layout em coluna */
+    .agenda-section .left, 
+    .agenda-section .right {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    /* Redimensionamento do calendário */
+    .calendar {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        font-size: 1em;
+    }
+
+    /* Ajustes para o cabeçalho do mês */
+    .calendar .month {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+
+    .calendar .month i {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    /* Ajuste para os dias da semana e dias do mês */
+    .calendar .weekdays, .calendar .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .calendar .days div {
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    /* Botões e campos de navegação do calendário */
+    .calendar .goto-today {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .calendar .date-input {
+        width: 90%;
+        padding: 8px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .calendar .goto-btn, .calendar .today-btn {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+
+    /* Botão de adicionar evento para ficar fixo na tela */
+    .add-event {
+        font-size: 1.2em;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #4F9CF9;
+        color: white;
+        border-radius: 50%;
+    }
+
+    /* Ajuste do contêiner de eventos */
+    .events, .add-event-wrapper {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
