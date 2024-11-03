@@ -451,14 +451,16 @@ footer .container a{
     /* Empilhar seções horizontalmente */
     .agenda .container,
     .foto .container,
-    .curiosidades .container {
+    .curiosidades .container,
+    .sobre .container {
         flex-direction: column;
         align-items: center;
     }
 
     .agenda .agenda-text,
     .foto .foto-text,
-    .curiosidades .card {
+    .curiosidades .card,
+    .sobre-text {
         width: 100%;
         padding: 20px;
     }
