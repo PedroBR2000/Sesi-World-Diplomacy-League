@@ -11,9 +11,6 @@
     <header style="background-image: url('img/ONU-1111x740.png');">
         <div class="container">
             <nav>
-                <a href="Index2.html">
-
-                </a>
                 <ul class="ul">
                     <a href="Index2.html">Home</a>
                     <a href="sobre.html">Sobre</a>
@@ -41,7 +38,130 @@
         </div>
     </header>
 
-
+    <!-- Formulário de Inscrição -->
+    <section class="form-section">
+        <div class="container">
+            <h2>Formulário de Inscrição</h2>
+            <form action="#" method="POST" class="inscription-form">
+                <!-- Informações Pessoais -->
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Ano:</label>
+                    <select id="year" name="year" required>
+                        <option value="6">6º</option>
+                        <option value="7">7º</option>
+                        <option value="8">8º</option>
+                        <option value="9">9º</option>
+                        <option value="1EM">1º EM</option>
+                        <option value="2EM">2º EM</option>
+                        <option value="3EM">3º EM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="class">Série:</label>
+                    <select id="class" name="class" required>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+    
+                <!-- Perguntas Gerais -->
+                <div class="form-group">
+                    <label for="debates">Você já participou de simulações ou eventos relacionados a debates ou diplomacia?</label>
+                    <input type="radio" id="debatesYes" name="debates" value="Sim" required> Sim
+                    <input type="radio" id="debatesNo" name="debates" value="Não" required> Não
+                </div>
+                <div class="form-group">
+                    <label for="interest">Você tem interesse em aprender mais sobre como os países trabalham juntos para resolver problemas globais?</label>
+                    <input type="radio" id="interestYes" name="interest" value="Sim" required> Sim
+                    <input type="radio" id="interestNo" name="interest" value="Não" required> Não
+                    <input type="radio" id="interestDontKnow" name="interest" value="Não sei" required> Não sei
+                </div>
+    
+                <div class="form-group">
+                    <label for="attract">O que mais te atrai em participar de um evento como a simulação da ONU? (Marque até 3 opções)</label>
+                    <input type="checkbox" name="attract" value="Aprender sobre política internacional"> Aprender sobre política internacional
+                    <input type="checkbox" name="attract" value="Discutir e buscar soluções para problemas globais"> Discutir e buscar soluções para problemas globais
+                    <input type="checkbox" name="attract" value="Melhorar habilidades de comunicação e negociação"> Melhorar habilidades de comunicação e negociação
+                    <input type="checkbox" name="attract" value="Trabalhar em equipe com pessoas de diferentes origens"> Trabalhar em equipe com pessoas de diferentes origens
+                    <input type="checkbox" name="attract" value="Representar um país e suas opiniões"> Representar um país e suas opiniões
+                    <input type="checkbox" name="attract" value="Outras"> Outras (especifique): <input type="text" name="attractOther">
+                </div>
+    
+                <!-- Características e Habilidades -->
+                <div class="form-group">
+                    <label for="debateSkills">Você se considera uma pessoa que gosta de debater ideias e defender sua opinião de forma respeitosa?</label>
+                    <input type="radio" id="debateSkillsYes" name="debateSkills" value="Sim" required> Sim
+                    <input type="radio" id="debateSkillsNo" name="debateSkills" value="Não" required> Não
+                    <input type="radio" id="debateSkillsSometimes" name="debateSkills" value="Às vezes" required> Às vezes
+                </div>
+                <div class="form-group">
+                    <label for="leadership">Você já teve alguma experiência em liderar ou coordenar grupos?</label>
+                    <input type="radio" id="leadershipYes" name="leadership" value="Sim" required> Sim
+                    <input type="radio" id="leadershipNo" name="leadership" value="Não" required> Não
+                </div>
+                <div class="form-group">
+                    <label for="skills">Quais habilidades você gostaria de desenvolver ou melhorar ao participar do projeto? (Marque até 3 opções)</label>
+                    <input type="checkbox" name="skills" value="Liderança"> Liderança
+                    <input type="checkbox" name="skills" value="Negociação"> Habilidades de negociação
+                    <input type="checkbox" name="skills" value="Equipe"> Trabalho em equipe
+                    <input type="checkbox" name="skills" value="Comunicação"> Comunicação pública
+                    <input type="checkbox" name="skills" value="Resolução de conflitos"> Resolução de conflitos
+                    <input type="checkbox" name="skills" value="Pesquisa"> Pesquisa sobre questões globais
+                    <input type="checkbox" name="skills" value="Outro"> Outro (especifique): <input type="text" name="skillsOther">
+                </div>
+    
+                <!-- Comprometimento -->
+                <div class="form-group">
+                    <label for="commitment">Você estaria disposto(a) a se comprometer com reuniões e atividades extras (como simulações e preparações) durante o ano?</label>
+                    <input type="radio" id="commitmentYes" name="commitment" value="Sim" required> Sim, com certeza
+                    <input type="radio" id="commitmentMaybe" name="commitment" value="Sim, mas depende do horário" required> Sim, mas depende do horário
+                    <input type="radio" id="commitmentNo" name="commitment" value="Não" required> Não
+                </div>
+    
+                <div class="form-group">
+                    <label for="availability">Qual a sua disponibilidade para participar de eventos e reuniões do projeto?</label>
+                    <input type="radio" id="availabilityWeekly" name="availability" value="Semanalmente" required> Semanalmente
+                    <input type="radio" id="availabilityBiweekly" name="availability" value="Quinzenalmente" required> Quinzenalmente
+                    <input type="radio" id="availabilityMonthly" name="availability" value="Mensalmente" required> Mensalmente
+                </div>
+    
+                <!-- Visão de Longo Prazo -->
+                <div class="form-group">
+                    <label for="futureParticipation">Você se vê participando de mais simulações ou projetos internacionais no futuro?</label>
+                    <input type="radio" id="futureParticipationYes" name="futureParticipation" value="Sim" required> Sim
+                    <input type="radio" id="futureParticipationMaybe" name="futureParticipation" value="Talvez" required> Talvez
+                    <input type="radio" id="futureParticipationNo" name="futureParticipation" value="Não" required> Não
+                </div>
+    
+                <div class="form-group">
+                    <label for="characteristics">Quais características você acredita que um bom diplomata deve ter?</label>
+                    <textarea name="characteristics" id="characteristics" rows="4" placeholder="Descreva aqui" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <label for="fututureProjects">Você estaria interessado(a) em continuar se envolvendo em projetos como esse no futuro (como liderança de grupo ou organização)?</label>
+                    <input type="radio" id="fututureProjectsYes" name="fututureProjects" value="Sim" required> Sim, com certeza
+                    <input type="radio" id="fututureProjectsMaybe" name="fututureProjects" value="Talvez" required> Talvez
+                    <input type="radio" id="fututureProjectsNo" name="fututureProjects" value="Não" required> Não
+                </div>
+    
+                <!-- Interesse de Participação -->
+                <div class="form-group">
+                    <label for="moreInfo">Você gostaria de receber mais informações sobre como se envolver no "Sesi World Diplomacy League" e futuras oportunidades de participação?</label>
+                    <input type="radio" id="moreInfoYes" name="moreInfo" value="Sim" required> Sim
+                    <input type="radio" id="moreInfoNo" name="moreInfo" value="Não" required> Não
+                </div>
+    
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
 
     <section class="download-card">
         <div class="card-content">
@@ -50,7 +170,7 @@
             <a href="materiais/Regimento da simulação.pdf" download class="btn download-btn">Download</a>
         </div>
     </section>
-
+    
     <section class="download-card">
         <div class="card-content">
             <h3>Material-2024</h3>
@@ -59,16 +179,15 @@
         </div>
     </section>
     
-
-     <footer>
+    <footer>
         <div class="container">
             <ul>
-                <h3>SESI World Diplomacy League</h3>
-                <p>Simulado da ONU - SESI CE-437</p>
-                <div class="redes-sociais">
+                <li><h3>SESI World Diplomacy League</h3></li>
+                <li><p>Simulado da ONU - SESI CE-437</p></li>
+                <li><div class="redes-sociais">
                     <a href="https://www.instagram.com/world_ddiplomacyleague/"><img src="img/instagram.png" alt="instagram"></a>
-                </div>
-            </ul>
+                </div></li>
+            </ul>            
             <ul>
                 <h3>Link</h3>
                 <li><a href="index.html">Home</a></li>
