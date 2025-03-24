@@ -216,7 +216,10 @@ nav .close-icon{
     width: 100%;
 }
 
-/* Perguntas Frequentes */
+/* Seção Perguntas Frequentes - Carrossel */
+.curiosidades {
+    padding: 54px 0; /* Mantido do seu CSS */
+}
 .textcenter {
     text-align: center;
     padding: 20px;
@@ -224,70 +227,125 @@ nav .close-icon{
 .Perguntas {
     color: #1c3c57;
     font-size: 32px;
-}
-.curiosidades {
-    padding: 40px;
+    font-weight: 600;
 }
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px; /* Aumentei para caber cards maiores */
     margin: 0 auto;
     overflow: hidden;
+    padding: 20px 0;
 }
 .carousel {
     display: flex;
-    gap: 20px;
+    gap: 30px; /* Espaçamento maior entre os cards */
     transition: transform 0.5s ease;
 }
 .carousel .card {
-    background-color: white;
-    padding: 20px;
-    width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    padding: 30px;
+    width: 280px; /* Cards maiores */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0px 10px 30px rgba(79, 156, 249, 0.2); /* Sombra suave com tom azul */
     text-align: center;
     flex-shrink: 0;
-    transform: scale(0.8);
-    opacity: 0.7;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(0.9); /* Cards menores por padrão */
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
 }
 .carousel .card.active {
-    width: 250px;
+    width: 320px; /* Card ativo ainda maior */
     transform: scale(1);
     opacity: 1;
+    box-shadow: 0px 15px 40px rgba(79, 156, 249, 0.4); /* Sombra mais forte no ativo */
 }
 .carousel .card img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
 }
 .carousel .titulo {
     color: #1c3c57;
-    font-size: 20px;
+    font-size: 24px; /* Título maior */
+    font-weight: 600;
     margin: 10px 0;
 }
 .carousel p {
     color: #333;
+    font-size: 16px; /* Texto maior e legível */
+    line-height: 1.5;
 }
 .carousel-btn {
-    background-color: #f3b44e;
-    color: #1c3c57;
+    background-color: #4F9CF9; /* Azul principal do seu tema */
+    color: white;
     border: none;
-    padding: 10px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 500;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    border-radius: 50%; /* Botões circulares */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(79, 156, 249, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .carousel-btn.prev {
-    left: 10px;
+    left: -60px; /* Afastado do carrossel */
 }
 .carousel-btn.next {
-    right: 10px;
+    right: -60px; /* Afastado do carrossel */
 }
 .carousel-btn:hover {
-    background-color: #1c3c57;
-    color: white;
+    background-color: #3580db; /* Hover do seu tema */
+    transform: translateY(-50%) scale(1.1); /* Leve aumento ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 960px) {
+    .carousel-container {
+        max-width: 700px;
+    }
+    .carousel .card {
+        width: 220px;
+    }
+    .carousel .card.active {
+        width: 260px;
+    }
+    .carousel-btn.prev {
+        left: 10px;
+    }
+    .carousel-btn.next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 90%;
+    }
+    .carousel .card {
+        width: 200px;
+    }
+    .carousel .card.active {
+        width: 240px;
+    }
+    .carousel .titulo {
+        font-size: 20px;
+    }
+    .carousel p {
+        font-size: 14px;
+    }
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 .foto .container{
     display: flex;
@@ -404,15 +462,6 @@ footer .container a{
     color: #333;
 }
 
-.textcenter .Perguntas {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    box-shadow: 0px 10px 67px 8px #b1b1f485;
-    text-align: center;
-}
 
 .download-card h3 {
     font-size: 0%;
