@@ -14,6 +14,70 @@ function closeMenu(){
 }
 
 
+// Carrossel Infinito
+const carousel = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.carousel .card');
+const cardCount = cards.length;
+let currentIndex = 0;
+
+// Clona os cards para criar o efeito infinito
+function setupInfiniteCarousel() {
+    for (let i = 0; i < cardCount; i++) {
+        const cloneStart = cards[i].cloneNode(true);
+        const cloneEnd = cards[i].cloneNode(true);
+        carousel.appendChild(cloneStart);
+        carousel.insertBefore(cloneEnd, cards[0]);
+    }
+}
+
+function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 20; // Largura do card + gap
+    const offset = -(currentIndex + cardCount) * cardWidth + (carousel.parentElement.offsetWidth / 2 - cardWidth / 2);
+    carousel.style.transition = 'transform 0.5s ease';
+    carousel.style.transform = `translateX(${offset}px)`;
+
+    // Atualiza o card ativo
+    const allCards = document.querySelectorAll('.carousel .card');
+    allCards.forEach((card, index) => {
+        card.classList.remove('active');
+        if (index === currentIndex + cardCount) {
+            card.classList.add('active');
+        }
+    });
+
+    // Reseta a posição sem transição para o loop infinito
+    setTimeout(() => {
+        if (currentIndex >= cardCount) {
+            carousel.style.transition = 'none';
+            currentIndex = 0;
+            const resetOffset = -(currentIndex + cardCount) * cardWidth + (carousel.parentElement.offsetWidth / 2 - cardWidth / 2);
+            carousel.style.transform = `translateX(${resetOffset}px)`;
+        } else if (currentIndex < 0) {
+            carousel.style.transition = 'none';
+            currentIndex = cardCount - 1;
+            const resetOffset = -(currentIndex + cardCount) * cardWidth + (carousel.parentElement.offsetWidth / 2 - cardWidth / 2);
+            carousel.style.transform = `translateX(${resetOffset}px)`;
+        }
+    }, 500); // Tempo da transição
+}
+
+function moveCarousel(direction) {
+    currentIndex += direction;
+    updateCarousel();
+}
+
+// Inicializa o carrossel
+setupInfiniteCarousel();
+updateCarousel();
+
+// Rotação automática a cada 3 segundos
+setInterval(() => {
+    moveCarousel(1);
+}, 6000);
+
+// Ajusta o carrossel ao redimensionar a janela
+window.addEventListener('resize', updateCarousel);
+
 
 const calendar = document.querySelector(".calendar"),
   date = document.querySelector(".date"),
