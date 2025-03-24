@@ -1,66 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .copyright {
-    text-align: center; /* Centraliza o texto */
-    padding: 10px 0;   /* Adiciona um pouco de espaçamento */
-    background-color: #4a77ff; /* Cor de fundo do rodapé */
-    color: white;      /* Cor do texto */
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4a77ff;
+    color: white;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #d1e5fe31 ;
-}
-.grupo-img img {
-    width: 100%; /* Ajusta a largura para preencher o elemento pai */
-    max-width: 300px; /* Limita a largura máxima */
-    height: auto; /* Mantém a proporção da imagem */
+    background-color: #d1e5fe31;
 }
 
 .grupo-img {
     max-width: 300px;
-    overflow: hidden; /* Garante que a imagem não ultrapasse o limite */
+    overflow: hidden;
 }
 
 .grupo-img img {
     width: 100%;
+    max-width: 300px;
     height: auto;
 }
 
 .add-event {
-    display: none; /* Oculto por padrão */
+    display: none;
 }
 
-section{
+section {
     padding: 54px 0;
 }
 
-footer{
+footer {
     padding: 2.7rem 0;
 }
 
-.sobre-text h3{
+.sobre-text h3 {
     width: 100%;
 }
-h3{
+
+h3 {
     font-size: 50px;
 }
-p{
+
+p {
     color: black;
     margin: 10px;
 }
-.container{
+
+.container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
 }
-.btn{
+
+.btn {
     background-color: #4F9CF9;
     color: white;
     padding: 15px 20px;
@@ -69,22 +71,23 @@ p{
     display: inline-block;
     transition: 0.1s;
 }
-.btn.animate-btn{
+
+.btn.animate-btn {
     animation: animate-outline 1s ease-out infinite;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #3580db;
 }
 
-
-
-.contact-form{
+.contact-form {
     width: 100%;
     align-items: center;
     margin: 20px auto;
-    color: black ;
+    color: black;
 }
-.contact-form input{
+
+.contact-form input {
     width: 100%;
     padding: 8px 0;
     margin: 8px 0;
@@ -92,7 +95,7 @@ p{
     border: solid 1px;
 }
 
-.contact-form input[type=text] {
+.contact-form input[type="text"] {
     height: 100px;
     border-radius: 10px;
     border: solid 1px;
@@ -102,7 +105,7 @@ button {
     color: black;
     background-color: #4F9CF9;
     border-radius: 10px;
-    border: solid 1;
+    border: solid 1px;
     cursor: pointer;
     margin-top: 100px;
     align-items: center;
@@ -110,343 +113,324 @@ button {
     height: 50px;
 }
 
-
-
-@keyframes animate-outline{
-    from{
+@keyframes animate-outline {
+    from {
         outline: 0px solid #4f9bf98a;
     }
-    to{
+    to {
         outline: 15px solid #4f9bf900;
     }
 }
-header{
+
+header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
 }
-nav ul a{
+
+nav ul a {
     color: white;
     margin: 0 25px;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
 }
-nav ul a:not(.btn):after{
+
+nav ul a:not(.btn)::after {
     content: "";
-    color: rgb(0, 195, 255);
+    background-color: rgb(0, 195, 255);
     height: 3px;
     width: 0%;
     margin: 0 auto;
     display: block;
     transition: 0.3s;
 }
-nav ul a:hover::after{
+
+nav ul a:hover::after {
     width: 100%;
 }
 
-nav .menu-icon{
+nav .menu-icon {
     cursor: pointer;
     font-size: 25px;
     display: none;
 }
 
-nav .close-icon{
+nav .close-icon {
     display: none;
     font-size: 30px;
 }
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
 }
-.banner .banner-text{
+
+.banner .banner-text {
     margin: 150px;
     text-align: center;
     padding: 0 90px;
 }
-.banner .banner-text h1{
+
+.banner .banner-text h1 {
     font-size: 43px;
     color: white;
     text-shadow: 
-    -1px -1px 0px black,  
-    1px -1px 0px black,  
-    -1px 1px 0px black,  
-    1px 1px 0px black;
+        -1px -1px 0px black,  
+        1px -1px 0px black,  
+        -1px 1px 0px black,  
+        1px 1px 0px black;
 }
-.banner .banner-text p{
+
+.banner .banner-text p {
     font-size: 28px;
     color: #ffffffb7;
     margin: 18px 0;
     text-shadow: 
-    -1px -1px 0px black,  
-    1px -1px 0px black,  
-    -1px 1px 0px black,  
-    1px 1px 0px black;
+        -1px -1px 0px black,  
+        1px -1px 0px black,  
+        -1px 1px 0px black,  
+        1px 1px 0px black;
 }
-.agenda .container{
+
+.agenda .container {
     display: flex;
     align-items: center;
 }
-.agenda .agenda-text{
+
+.agenda .agenda-text {
     width: 50%;
     padding: 0 40px;
 }
-.agenda .agenda-text h3{
-    font-size: 56px; 
+
+.agenda .agenda-text h3 {
+    font-size: 56px;
 }
-.agenda .agenda-text p{
+
+.agenda .agenda-text p {
     margin: 5px 0 10px 0;
 }
-.agenda .agenda-img{
+
+.agenda .agenda-img {
     width: 50%;
 }
-.agenda .agenda-img img{
+
+.agenda .agenda-img img {
     width: 100%;
 }
 
 /* Seção Perguntas Frequentes - Carrossel */
-.curiosidades {
-    padding: 54px 0; /* Mantido do seu CSS */
-}
 .textcenter {
     text-align: center;
     padding: 20px;
 }
+
 .Perguntas {
-    color: #1c3c57;
-    font-size: 32px;
+    font-size: 50px; /* Alinhado com h3 do seu CSS */
+    color: #4F9CF9; /* Cor principal do tema */
     font-weight: 600;
 }
+
+.curiosidades {
+    padding: 54px 0;
+}
+
 .carousel-container {
     position: relative;
-    max-width: 1000px; /* Aumentei para caber cards maiores */
+    max-width: 1200px; /* Alinhado ao container com padding 5% */
     margin: 0 auto;
+    padding: 0 5%;
     overflow: hidden;
-    padding: 20px 0;
 }
+
 .carousel {
     display: flex;
-    gap: 30px; /* Espaçamento maior entre os cards */
-    transition: transform 0.5s ease;
+    gap: 20px;
+    transition: transform 0.5s ease; /* Mantida a transição suave */
 }
+
 .carousel .card {
     background-color: #fff;
-    padding: 30px;
-    width: 280px; /* Cards maiores */
-    border-radius: 15px; /* Bordas mais arredondadas */
-    box-shadow: 0px 10px 30px rgba(79, 156, 249, 0.2); /* Sombra suave com tom azul */
+    padding: 25px;
+    width: 280px; /* Tamanho fixo para consistência */
+    border-radius: 10px; /* Bordas arredondadas padrão */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
     text-align: center;
     flex-shrink: 0;
     transform: scale(0.9); /* Cards menores por padrão */
-    opacity: 0.8;
-    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.7; /* Opacidade reduzida por padrão */
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease; /* Todas as transições mantidas */
 }
+
 .carousel .card.active {
-    width: 320px; /* Card ativo ainda maior */
-    transform: scale(1);
-    opacity: 1;
-    box-shadow: 0px 15px 40px rgba(79, 156, 249, 0.4); /* Sombra mais forte no ativo */
+    width: 320px; /* Card ativo maior */
+    transform: scale(1); /* Tamanho normal */
+    opacity: 1; /* Totalmente visível */
+    box-shadow: 0px 15px 30px rgba(79, 156, 249, 0.3); /* Sombra com tom azul no ativo */
 }
+
 .carousel .card img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-bottom: 15px;
 }
+
 .carousel .titulo {
-    color: #1c3c57;
-    font-size: 24px; /* Título maior */
-    font-weight: 600;
+    font-size: 22px; /* Tamanho ajustado para harmonia */
+    color: #4F9CF9; /* Cor principal do tema */
+    font-weight: 500;
     margin: 10px 0;
 }
+
 .carousel p {
-    color: #333;
-    font-size: 16px; /* Texto maior e legível */
+    font-size: 16px;
+    color: #555; /* Cinza suave para contraste */
     line-height: 1.5;
 }
+
 .carousel-btn {
-    background-color: #4F9CF9; /* Azul principal do seu tema */
+    background-color: #4F9CF9;
     color: white;
     border: none;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: 500;
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 50%; /* Botões circulares */
-    width: 50px;
-    height: 50px;
+    border-radius: 10px; /* Bordas arredondadas do tema */
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 5px 15px rgba(79, 156, 249, 0.3);
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease; /* Transição mantida */
 }
+
 .carousel-btn.prev {
-    left: -60px; /* Afastado do carrossel */
+    left: 10px;
 }
+
 .carousel-btn.next {
-    right: -60px; /* Afastado do carrossel */
+    right: 10px;
 }
+
 .carousel-btn:hover {
-    background-color: #3580db; /* Hover do seu tema */
-    transform: translateY(-50%) scale(1.1); /* Leve aumento ao passar o mouse */
+    background-color: #3580db;
 }
 
-/* Responsividade */
-@media (max-width: 960px) {
-    .carousel-container {
-        max-width: 700px;
-    }
-    .carousel .card {
-        width: 220px;
-    }
-    .carousel .card.active {
-        width: 260px;
-    }
-    .carousel-btn.prev {
-        left: 10px;
-    }
-    .carousel-btn.next {
-        right: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .carousel-container {
-        max-width: 90%;
-    }
-    .carousel .card {
-        width: 200px;
-    }
-    .carousel .card.active {
-        width: 240px;
-    }
-    .carousel .titulo {
-        font-size: 20px;
-    }
-    .carousel p {
-        font-size: 14px;
-    }
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-}
-.foto .container{
+.foto .container {
     display: flex;
     align-items: center;
 }
 
-.foto .grupo.img{
+.foto .grupo-img {
     width: 50%;
 }
 
-.foto .grupo.img img{
+.foto .grupo-img img {
     width: 100%;
     border-radius: 10px;
 }
 
-.foto .foto-text{
+.foto .foto-text {
     width: 50%;
     padding-left: 90px;
 }
 
-.foto .foto-text h2{
+.foto .foto-text h2 {
     font-size: 2.5em;
 }
 
-.foto .foto-text p{
+.foto .foto-text p {
     margin: 20px 0;
-
 }
 
-.foto .foto-text p b{
+.foto .foto-text p b {
     color: black;
     font-size: 25px;
 }
 
 footer {
     background-color: #4F9CF9;
-    clear: both; /* Impede que o footer fique ao lado de outro conteúdo flutuante */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
+    clear: both;
+    width: 100%;
     position: relative;
-    bottom: 0; /* Garante que o footer esteja no final da página */
+    bottom: 0;
 }
 
-footer .container{
+footer .container {
     display: flex;
-    color: white;  
+    color: white;
 }
 
-footer .container p{
-    color: white;  
+footer .container p {
+    color: white;
 }
 
-
-footer .container ul{
+footer .container ul {
     width: 25%;
 }
-footer .container h3{
+
+footer .container h3 {
     font-size: 17px;
     margin-bottom: 16px;
     font-weight: 600;
 }
 
-footer .container .redes-sociais img{
+footer .container .redes-sociais img {
     margin-right: 10px;
 }
 
-footer .container ul > p{
+footer .container ul > p {
     margin-bottom: 40px;
 }
 
-footer .container li{
+footer .container li {
     margin: 10px 0;
 }
-footer .container li p{
+
+footer .container li p {
     color: white;
 }
 
-footer .container a{
+footer .container a {
     color: white;
 }
 
-.sobre .container{
+.sobre .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.sobre .sobre-text{
+.sobre .sobre-text {
     width: 50%;
     padding-right: 40px;
 }
 
-.sobre .sobre-text p{
-    margin: 18 0px;
+.sobre .sobre-text p {
+    margin: 18px 0;
     color: black;
 }
 
-.sobre .sobre-img{
+.sobre .sobre-img {
     width: 50%;
 }
 
-.sobre .sobre-img img{
+.sobre .sobre-img img {
     width: 100%;
     border-radius: 10px;
 }
@@ -461,7 +445,6 @@ footer .container a{
     text-align: center;
     color: #333;
 }
-
 
 .download-card h3 {
     font-size: 0%;
@@ -488,9 +471,9 @@ footer .container a{
     background-color: #3580db;
 }
 
-
+/* Responsividade */
 @media (max-width: 960px) {
-    .ul{
+    .ul {
         background-color: #3580db;
         position: fixed;
         top: 0;
@@ -504,31 +487,52 @@ footer .container a{
         transition: 0.7s;
     }
 
-    .ul.open{
-        clip-path: circle(141.2% at 100% 0);  
+    .ul.open {
+        clip-path: circle(141.2% at 100% 0);
     }
 
-    .ul a{
+    .ul a {
         margin: 10px 0;
         font-size: 16px;
-
     }
-    nav .menu-icon{
+
+    nav .menu-icon {
         display: block;
     }
-    nav .close-icon{
+
+    nav .close-icon {
         display: block;
         position: absolute;
         top: 46px;
         right: 28px;
     }
+
     .download-card h3 {
         font-size: 0%;
         margin-bottom: 10px;
     }
+
+    .carousel-container {
+        max-width: 90%;
+    }
+
+    .carousel .card {
+        width: 220px;
+    }
+
+    .carousel .card.active {
+        width: 260px;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
 }
 
-/* Reduzir tamanho das fontes e margens em dispositivos móveis */
 @media (max-width: 768px) {
     .banner .banner-text {
         margin: 20px;
@@ -543,7 +547,6 @@ footer .container a{
         font-size: 1em;
     }
 
-    /* Empilhar seções horizontalmente */
     .agenda .container,
     .foto .container,
     .curiosidades .container,
@@ -560,129 +563,47 @@ footer .container a{
         padding: 20px;
     }
 
-    /* Ajustes no card de download */
     .download-card {
         margin: 20px auto;
         padding: 15px;
         width: 90%;
     }
 
-    /* Ajustar tamanho do rodapé e redes sociais */
     footer .container {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Menu: ocultar itens de navegação e exibir o ícone */
-
-
-
-    /* Ajustar o texto no card de perguntas frequentes */
     .textcenter .Perguntas {
-        font-size: 1.2em;
+        font-size: 32px;
+    }
+
+    .carousel .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .carousel .card.active {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .carousel .titulo {
+        font-size: 20px;
+    }
+
+    .carousel p {
+        font-size: 14px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
     }
 }
 
-
-/* Ajustes gerais para dispositivos móveis */
-@media (max-width: 768px) {
-    /* Ajuste do contêiner do calendário */
-    .agenda-section .container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    /* Ajuste para layout em coluna */
-    .agenda-section .left, 
-    .agenda-section .right {
-        width: 100%;
-        padding: 0;
-        margin: 10px 0;
-    }
-
-    /* Redimensionamento do calendário */
-    .calendar {
-        width: 100%;
-        padding: 10px;
-        box-shadow: none;
-        font-size: 1em;
-    }
-
-    /* Ajustes para o cabeçalho do mês */
-    .calendar .month {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        font-size: 1.2em;
-    }
-
-    .calendar .month i {
-        font-size: 1.5em;
-        cursor: pointer;
-    }
-
-    /* Ajuste para os dias da semana e dias do mês */
-    .calendar .weekdays, .calendar .days {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        gap: 5px;
-        text-align: center;
-        font-size: 0.9em;
-    }
-
-    .calendar .days div {
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 1em;
-    }
-
-    /* Botões e campos de navegação do calendário */
-    .calendar .goto-today {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    .calendar .date-input {
-        width: 90%;
-        padding: 8px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .calendar .goto-btn, .calendar .today-btn {
-        width: 90%;
-        padding: 10px;
-        margin: 5px 0;
-        font-size: 1em;
-    }
-
-    /* Botão de adicionar evento para ficar fixo na tela */
-    .add-event {
-        font-size: 1.2em;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #4F9CF9;
-        color: white;
-        border-radius: 50%;
-    }
-
-    /* Ajuste do contêiner de eventos */
-    .events, .add-event-wrapper {
-        padding: 10px;
-        font-size: 0.9em;
-    }
-}
-
-
+/* Restante do CSS para agenda-section, form-section, etc., permanece igual */
 .form-section {
     max-width: 800px;
     margin: 50px auto;
